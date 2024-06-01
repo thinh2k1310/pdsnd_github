@@ -214,10 +214,12 @@ def main():
         user_stats(df)
         display_five_rows(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        restart = input('\nWould you like to restart? Enter yes or no.\n').strip().lower()
+        if restart != 'yes':
             break
-
+    print('-'*20,end="")
+    print('END',end="")
+    print('-'*20)
 
 if __name__ == "__main__":
    main()
