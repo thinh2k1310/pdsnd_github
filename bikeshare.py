@@ -211,7 +211,9 @@ def main():
         restart = input('\nWould you like to restart? Enter yes or no.\n').strip().lower()
         if restart != 'yes':
             break
-
+    print('-'*20,end="")
+    print('END',end="")
+    print('-'*20)
 
 if __name__ == "__main__":
    main()
