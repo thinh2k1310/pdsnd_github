@@ -86,6 +86,12 @@ def load_data(city, month, day):
     return df
 
 def display_five_rows(df):
+    """
+    Display five row each time user call.
+
+    Args:
+        df - Pandas DataFrame to display
+    """
 
     is_display = input("\nDo you want to see the first five raws of data? Yes or No:\n").strip().lower()
     if  is_display == 'yes':
